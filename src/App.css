@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+
+
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway'), url(./fonts/Raleway-Regular.ttf) format('truetype');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato'), url(./fonts/Lato-Regular.ttf) format('truetype');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'Notable';
+  src: local('Notable'), url(./fonts/Notable-Regular.ttf) format('truetype');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#components-grid-demo-flex [class~='ant-row'] {
+  background: rgba(128, 128, 128, 0.08);
+}
+
+.ant-layout-header{
+  background: #1A1A1A;
+}
+
+.ant-collapse, .ant-collapse-content {
+  background: #1A1A1A;
+}
+
+.ant-layout-content{
+  background: #000000;
+}
+
+h3.ant-typography, .ant-typography h3{
+  font-family: Raleway;
+  font-size: 15px;
+  font-weight: 400;
+  color: #C6C6C6;
+}
+
+h4.ant-typography, .ant-typography h4{
+  font-family: Raleway;
+  font-weight: 100;
+  font-size: 13px;
+  color: #C6C6C6;
+}
+
+div.ant-typography, .ant-typography p {
+  font-family: Lato;
+  line-height: normal;
+  text-align: justify;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
