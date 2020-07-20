@@ -37,31 +37,24 @@ const categories = [
     elements: [
       {
         key: 0,
-        name: "Carpaccio de res",
+        name: "TAPA DE JAMON SERRANO CON ACEITUNAS",
         cost: 70,
         description:
-          "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+          "Jamón serrano, pan, aceitunas y ajo",
       },
       {
         key: 1,
-        name: "Carpaccio de res",
+        name: "CARPACCIO DE RES",
         cost: 70,
         description:
-          "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+          "Petalos de filete de res, macerado con aceite de oliva, vinagre balsámico y jugo de limón",
       },
       {
         key: 2,
-        name: "Res",
-        cost: 40,
+        name: "NOPAL PORTOBELLO",
+        cost: 70,
         description:
-          "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
-      },
-      {
-        key: 3,
-        name: "Tacos",
-        cost: 50,
-        description:
-          "lorem ipsum lorem ipsum lorem ipsum ",
+          "Portobello relleno de pimientos, gratinado con queso cheddar, nopal asado con queso panela, aceite de oliva y oregano",
       },
     ]
   },
@@ -71,37 +64,78 @@ const categories = [
     elements: [
       {
         key: 0,
-        name: "Estilo Caprese Tibia",
+        name: "ESTILO CAPRESE TIBIA",
         cost: 50,
         description:
-          "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+          "Queso panela, jitomate cherry, albahaca, orégano y aceite de oliva",
       },
       {
         key: 1,
-        name: "Manzana encanelada",
+        name: "MANZANA ENCANELADA",
         cost: 60,
         description:
-          "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+          "Lechugas mixtas, manzana, nuez encanelada, queso de cabra con aderezo balsámico",
       },
+      {
+        key: 2,
+        name: "GRIEGA",
+        cost: 55,
+        description:
+          "Espinacas, cebolla morada, pepino, aceitunas, tomate, pimientos y aceite de oliva",
+      }
     ]
   },
   {
-    key: 1,
+    key: 2,
     name: "PASTAS",
     elements: [
       {
         key: 0,
-        name: "Carbonara",
+        name: "CARBONARA",
         cost: 75,
         description:
-          "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+          "Espaguetti, tocino, ajo, cebolla, crema y mantequilla",
       },
       {
         key: 1,
-        name: "Pomodoro con camaron",
-        cost: 60,
+        name: "POMODORO CON CAMARON",
+        cost: 80,
         description:
-          "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+          "Espaguetti, salsa italiana, albahaca, orégano y camarón",
+      },
+      {
+        key: 2,
+        name: "ALFREDO CON TOMATE Y POLLO",
+        cost: 75,
+        description:
+          "Espaguetti, crema, ajo, cebolla, mantequilla, tomate deshidratado y pollo",
+      },
+    ]
+  },
+  {
+    key: 3,
+    name: "PIZZAS",
+    elements: [
+      {
+        key: 0,
+        name: "CORAZONES DE ALCACHOFA & CAMARONES",
+        cost: 75,
+        description:
+          "Salsa italiana, corazón de alcachofa, camarón y queso",
+      },
+      {
+        key: 1,
+        name: "JAMON SERRANO",
+        cost: 80,
+        description:
+          "Salsa italiana, jamón serrano, champiñones y queso",
+      },
+      {
+        key: 2,
+        name: "MEDITERRANEA",
+        cost: 75,
+        description:
+          "Salsa italiana, pimientos, aceitunas, tomates deshidratados y queso",
       },
     ]
   },
@@ -136,7 +170,7 @@ const CerveMenu = ({title}) => {
         </Row>
       </Header>
       <Content>
-        <Row justify="center">
+        <Row justify="left">
           <Col style={{marginTop: "1rem"}} span={24}>
               <Category category={categories}/>
           </Col>
